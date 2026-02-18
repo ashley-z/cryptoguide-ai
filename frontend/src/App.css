@@ -1,0 +1,220 @@
+/* ===========================
+   APP LAYOUT — Crystalline Intelligence
+   ========================= */
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header */
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.25rem;
+  margin-top: 1rem;
+  border-radius: var(--radius-lg);
+  position: sticky;
+  top: 0.5rem;
+  z-index: 50;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-icon {
+  font-size: 1.5rem;
+  color: var(--color-indigo);
+  filter: drop-shadow(0 0 6px var(--color-indigo-glow));
+}
+
+.logo-text {
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--color-slate-50);
+}
+
+.logo-accent {
+  color: var(--color-indigo);
+}
+
+.header-tag {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-slate-500);
+  padding: 0.2rem 0.6rem;
+  border: 1px solid var(--color-slate-800);
+  border-radius: var(--radius-full);
+}
+
+/* Welcome Screen */
+.app-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome-screen {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem 0;
+}
+
+.welcome-hero {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.welcome-prism {
+  font-size: 4rem;
+  color: var(--color-indigo);
+  filter: drop-shadow(0 0 20px var(--color-indigo-glow));
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.welcome-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: var(--color-slate-100);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-indigo-light), var(--color-cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.welcome-subtitle {
+  font-size: 1rem;
+  color: var(--color-slate-400);
+  max-width: 400px;
+}
+
+/* Input Footer */
+.app-footer {
+  position: sticky;
+  bottom: 0;
+  padding: 1rem 0 1.5rem;
+  background: linear-gradient(to top, var(--color-obsidian) 60%, transparent);
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 0.75rem;
+  border-radius: var(--radius-lg);
+  background: var(--color-obsidian-light);
+  border: 1px solid var(--color-slate-800);
+  transition: all 0.2s var(--ease-out-expo);
+}
+
+.input-wrapper:focus-within {
+  border-color: var(--color-indigo);
+  box-shadow: 0 0 0 3px var(--color-indigo-glow);
+}
+
+.query-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--color-slate-100);
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  padding: 0.25rem 0;
+}
+
+.query-input::placeholder {
+  color: var(--color-slate-600);
+}
+
+.query-input:disabled {
+  opacity: 0.5;
+}
+
+.submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: var(--radius-md);
+  background: var(--color-indigo);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.125rem;
+  transition: all 0.15s ease;
+  flex-shrink: 0;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background: var(--color-indigo-dark);
+  box-shadow: 0 0 12px var(--color-indigo-glow);
+}
+
+.submit-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.submit-loading {
+  display: inline-block;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.input-disclaimer {
+  font-size: 0.6875rem;
+  color: var(--color-slate-600);
+  text-align: center;
+}

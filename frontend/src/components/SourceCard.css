@@ -1,0 +1,104 @@
+.source-card {
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all 0.15s var(--ease-out-expo);
+}
+
+.source-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.source-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8125rem;
+}
+
+.source-index {
+    color: var(--color-cyan);
+    font-weight: 600;
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+}
+
+.source-doc {
+    color: var(--color-slate-300);
+    font-weight: 500;
+    flex: 1;
+}
+
+.source-page {
+    color: var(--color-slate-500);
+    font-size: 0.75rem;
+}
+
+.source-chevron {
+    color: var(--color-slate-600);
+    font-size: 0.75rem;
+    transition: transform 0.2s var(--ease-out-expo);
+}
+
+.source-chevron.expanded {
+    transform: rotate(90deg);
+}
+
+.source-card-body {
+    padding: 0 0.75rem 0.625rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.source-excerpt {
+    font-size: 0.8125rem;
+    color: var(--color-slate-400);
+    line-height: 1.6;
+    font-style: italic;
+    border-left: 2px solid var(--color-cyan-dark);
+    padding-left: 0.75rem;
+}
+
+.source-link {
+    font-size: 0.75rem;
+    color: var(--color-cyan);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    transition: color 0.15s ease;
+}
+
+.source-link:hover {
+    color: var(--color-cyan-light);
+}
+
+/* Protocol Badge */
+.source-protocol-badge {
+    font-size: 0.625rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 0.125rem 0.4rem;
+    border-radius: var(--radius-full);
+    flex-shrink: 0;
+}
+
+.protocol-aave {
+    background: rgba(168, 85, 247, 0.15);
+    color: #a855f7;
+    border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+.protocol-compound {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.protocol-uniswap {
+    background: rgba(236, 72, 153, 0.15);
+    color: #ec4899;
+    border: 1px solid rgba(236, 72, 153, 0.3);
+}

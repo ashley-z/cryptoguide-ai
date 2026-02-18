@@ -1,0 +1,1 @@
+# CryptoGuide AI Evaluation Package

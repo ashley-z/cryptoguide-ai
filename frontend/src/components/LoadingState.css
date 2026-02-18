@@ -1,0 +1,32 @@
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.loading-pulse {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+}
+
+.loading-lines {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.loading-line {
+    height: 1rem;
+    border-radius: var(--radius-sm);
+}

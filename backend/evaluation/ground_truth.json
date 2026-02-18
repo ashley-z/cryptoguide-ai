@@ -1,0 +1,269 @@
+{
+    "version": "1.0",
+    "created": "2026-02-17",
+    "description": "Ground truth dataset for CryptoGuide AI evaluation",
+    "test_cases": [
+        {
+            "id": 1,
+            "protocol": "aave",
+            "question": "What is the liquidation threshold in Aave V3?",
+            "expected_source": "Aave_V3_Technical_Paper.pdf",
+            "expected_keywords": [
+                "liquidation",
+                "threshold",
+                "collateral"
+            ],
+            "category": "parameter_lookup"
+        },
+        {
+            "id": 2,
+            "protocol": "aave",
+            "question": "How does Aave V3 handle flash loans?",
+            "expected_source": "Aave_V3_Technical_Paper.pdf",
+            "expected_keywords": [
+                "flash",
+                "loan",
+                "transaction",
+                "atomic"
+            ],
+            "category": "mechanism"
+        },
+        {
+            "id": 3,
+            "protocol": "aave",
+            "question": "What is the efficiency mode (eMode) in Aave V3?",
+            "expected_source": "Aave_V3_Technical_Paper.pdf",
+            "expected_keywords": [
+                "efficiency",
+                "emode",
+                "category",
+                "LTV"
+            ],
+            "category": "mechanism"
+        },
+        {
+            "id": 4,
+            "protocol": "aave",
+            "question": "How does Aave handle risk management for listed assets?",
+            "expected_source": "Aave_V3_Technical_Paper.pdf",
+            "expected_keywords": [
+                "risk",
+                "asset",
+                "listing",
+                "governance"
+            ],
+            "category": "risk"
+        },
+        {
+            "id": 5,
+            "protocol": "aave",
+            "question": "What is the Portal feature in Aave V3?",
+            "expected_source": "Aave_V3_Technical_Paper.pdf",
+            "expected_keywords": [
+                "portal",
+                "cross-chain",
+                "bridge",
+                "aToken"
+            ],
+            "category": "mechanism"
+        },
+        {
+            "id": 6,
+            "protocol": "aave",
+            "question": "What is the supply cap mechanism in Aave?",
+            "expected_source": "Aave_V3_Technical_Paper.pdf",
+            "expected_keywords": [
+                "supply",
+                "cap",
+                "limit",
+                "risk"
+            ],
+            "category": "parameter_lookup"
+        },
+        {
+            "id": 7,
+            "protocol": "aave",
+            "question": "How are interest rates calculated in Aave V3?",
+            "expected_source": "Aave_V3_Technical_Paper.pdf",
+            "expected_keywords": [
+                "interest",
+                "rate",
+                "utilization",
+                "variable"
+            ],
+            "category": "mechanism"
+        },
+        {
+            "id": 8,
+            "protocol": "aave",
+            "question": "What isolation mode does Aave V3 introduce?",
+            "expected_source": "Aave_V3_Technical_Paper.pdf",
+            "expected_keywords": [
+                "isolation",
+                "mode",
+                "debt",
+                "ceiling"
+            ],
+            "category": "risk"
+        },
+        {
+            "id": 9,
+            "protocol": "compound",
+            "question": "How does Compound V3 handle interest rates?",
+            "expected_source": "Compound_V3_Documentation.md",
+            "expected_keywords": [
+                "interest",
+                "rate",
+                "supply",
+                "borrow",
+                "utilization"
+            ],
+            "category": "mechanism"
+        },
+        {
+            "id": 10,
+            "protocol": "compound",
+            "question": "What is the liquidation process in Compound V3?",
+            "expected_source": "Compound_V3_Documentation.md",
+            "expected_keywords": [
+                "liquidation",
+                "absorb",
+                "collateral",
+                "factor"
+            ],
+            "category": "mechanism"
+        },
+        {
+            "id": 11,
+            "protocol": "compound",
+            "question": "How does collateral work in Compound V3?",
+            "expected_source": "Compound_V3_Documentation.md",
+            "expected_keywords": [
+                "collateral",
+                "supply",
+                "borrow",
+                "factor"
+            ],
+            "category": "parameter_lookup"
+        },
+        {
+            "id": 12,
+            "protocol": "compound",
+            "question": "How does Compound V3 governance work?",
+            "expected_source": "Compound_V3_Documentation.md",
+            "expected_keywords": [
+                "governance",
+                "COMP",
+                "timelock",
+                "proposal"
+            ],
+            "category": "governance"
+        },
+        {
+            "id": 13,
+            "protocol": "compound",
+            "question": "What are protocol rewards in Compound V3?",
+            "expected_source": "Compound_V3_Documentation.md",
+            "expected_keywords": [
+                "reward",
+                "accrual",
+                "ERC-20",
+                "supplier",
+                "borrower"
+            ],
+            "category": "mechanism"
+        },
+        {
+            "id": 14,
+            "protocol": "compound",
+            "question": "What is the minimum borrow balance in Compound V3?",
+            "expected_source": "Compound_V3_Documentation.md",
+            "expected_keywords": [
+                "minimum",
+                "borrow",
+                "balance",
+                "baseBorrowMin"
+            ],
+            "category": "parameter_lookup"
+        },
+        {
+            "id": 15,
+            "protocol": "uniswap",
+            "question": "How does concentrated liquidity work in Uniswap V3?",
+            "expected_source": "Uniswap_V3_Whitepaper.pdf",
+            "expected_keywords": [
+                "concentrated",
+                "liquidity",
+                "range",
+                "tick"
+            ],
+            "category": "mechanism"
+        },
+        {
+            "id": 16,
+            "protocol": "uniswap",
+            "question": "What are ticks in Uniswap V3?",
+            "expected_source": "Uniswap_V3_Whitepaper.pdf",
+            "expected_keywords": [
+                "tick",
+                "price",
+                "range",
+                "spacing"
+            ],
+            "category": "mechanism"
+        },
+        {
+            "id": 17,
+            "protocol": "uniswap",
+            "question": "How are swap fees calculated in Uniswap V3?",
+            "expected_source": "Uniswap_V3_Whitepaper.pdf",
+            "expected_keywords": [
+                "fee",
+                "swap",
+                "tier",
+                "liquidity"
+            ],
+            "category": "parameter_lookup"
+        },
+        {
+            "id": 18,
+            "protocol": "uniswap",
+            "question": "What is the oracle mechanism in Uniswap V3?",
+            "expected_source": "Uniswap_V3_Whitepaper.pdf",
+            "expected_keywords": [
+                "oracle",
+                "price",
+                "observation",
+                "TWAP"
+            ],
+            "category": "mechanism"
+        },
+        {
+            "id": 19,
+            "protocol": "uniswap",
+            "question": "How does Uniswap V3 handle non-fungible liquidity positions?",
+            "expected_source": "Uniswap_V3_Whitepaper.pdf",
+            "expected_keywords": [
+                "non-fungible",
+                "position",
+                "NFT",
+                "range"
+            ],
+            "category": "parameter_lookup"
+        },
+        {
+            "id": 20,
+            "protocol": "uniswap",
+            "question": "What is the constant product formula used by Uniswap?",
+            "expected_source": "Uniswap_V3_Whitepaper.pdf",
+            "expected_keywords": [
+                "constant",
+                "product",
+                "x*y",
+                "formula",
+                "AMM"
+            ],
+            "category": "mechanism"
+        }
+    ]
+}
