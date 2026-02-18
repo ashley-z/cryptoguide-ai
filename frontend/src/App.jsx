@@ -27,16 +27,17 @@ function App() {
     setIsLoading(true)
 
     try {
+      const API_BASE = import.meta.env.VITE_API_URL || ''
       let url, body
 
       if (compareMode) {
-        url = '/api/compare'
+        url = `${API_BASE}/api/compare`
         body = {
           question,
           protocols: [selectedProtocol, compareProtocol],
         }
       } else {
-        url = '/api/query'
+        url = `${API_BASE}/api/query`
         body = {
           question,
           protocol: selectedProtocol,
