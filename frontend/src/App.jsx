@@ -3,6 +3,7 @@ import './App.css'
 import ChatInterface from './components/ChatInterface'
 import ProtocolSelector from './components/ProtocolSelector'
 import SuggestedQuestions from './components/SuggestedQuestions'
+import { Analytics } from '@vercel/analytics/react'
 
 const PROTOCOLS = [
   { id: 'aave', name: 'Aave', icon: '🏦' },
@@ -86,6 +87,7 @@ function App() {
 
   return (
     <div className="app-container">
+      <Analytics />
       {/* Header */}
       <header className="app-header glass">
         <div className="header-left">
